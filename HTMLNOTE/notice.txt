@@ -1,0 +1,14 @@
+
+
+Aide mémoire avant d’aller plus loin 
+
+Ne pas oublier de faire les aide mémoire
+responsive a l’aide de média query
+
+
+    1. Aide mémoire pour une barre de navigation 
+    2. Aide mémoire pour integrer une police ( font )
+    3. Aide mémoire pour les before et after
+    4. Aide mémoire pour pour faire le lien HTML des icons ( CDN )
+    5. Aide mémoire pour faire un formulaire HTML et CSS en Grid
+     

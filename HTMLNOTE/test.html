@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!--Linkshortcut=Icone de l'onglet-->
+
+   <link rel="shortcut icon" href="./img/HTML5.png" />
+   <title>Document</title>
+</head>
+
+<body>
+
+   <!--Nav=balise pour regrouper la barre de navigation-->
+
+   <nav>
+
+      <!--Ul=Unordered List 
+      # sert a apeller id pour faire un lien cliquable vers cette endroit de la page sur la quel on est
+      .html sert a diriger vers un autre page html
+      target blank avec .html sert a diriger vers cette html mais dans un nouvel onglet-->
+
+      <ul>
+         <li><a target="_blank" href="index.html">Acceuil</a></li>
+         <li><a href="boutique.html">Boutique</a></li>
+         <li><a href="#formulaire">Formulaire</a></li>
+      </ul>
+   </nav>
+   <header>
+
+      <!--Un seul H1 par page-->
+
+      <h1>Hello World</h1>
+
+      <!--Type de texte-->
+
+      <p>
+         Texte normal
+         <em>Texte italique</em>
+         <strong>Texte en gras</strong>
+      </p>
+
+      <!--Lorem+chiffre=ecris le nombre de mots demander en latin pour tester-->
+
+      <p>
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis non
+         nemo, fuga modi facilis aspernatur quaerat provident impedit est? Illum
+         minima praesentium quas repellat quam nostrum nemo pariatur explicabo
+         necessitatibus!
+      </p>
+   </header>
+
+   <main>
+
+      <!--Section pour diviser le site en section pour mieu ce retrouver
+      et pour que l'indentation sois mieu (on ajoute les DIV par la suite 
+      au besoin pour bien separer le contenue quond a besoin)-->
+
+      <!--class=pour pouvoir apeller dans le css simplement par la suite(perso mieu que id mais id peux etre indispensable dans quelque cas)-->
+
+      <section class="ol">
+         <h2>Ordered List</h2>
+
+         <!--Liste dans l'ordre-->
+
+         <ol>
+            <li>Accueil</li>
+            <li>Boutique</li>
+            <li>Formulaire</li>
+         </ol>
+      </section>
+      <section class="ImgTable">
+         <h3>Image en Html</h3>
+
+         <!--height et width pour ajuster la hauteur et la larheur on aurai pue le faire en css aussi-->
+
+         <img src="./img/javascript.jpg" height=250px width="450px" alt="Image Not Found" />
+         <div class="Tableaux">
+            <h4>Tableaux</h4>
+
+            <!--Tableau HTML-->
+
+            <table border="4" cellpadding="6" cellspaccing="4" style="text-align: center;">
+
+               <!--thead = tete du tableau-->
+
+               <thead>
+
+                  <!--tr=ligne-->
+
+                  <tr>
+
+                     <!--th=Colonne en tete(gras)-->
+
+                     <th>colonne1</th>
+                     <th>colonne2</th>
+                     <th>colonne3</th>
+                  </tr>
+               </thead>
+
+               <!--tbody=Corp contenue ect-->
+
+               <tbody>
+                  <tr>
+
+                     <!--td=Colone contenue case normal(pas gras)-->
+
+                     <td>*****</td>
+                     <td>*****</td>
+                     <td>*****</td>
+                  </tr>
+                  <tr>
+                     <td>*****</td>
+                     <td>*****</td>
+                     <td>*****</td>
+                  </tr>
+                  <tr>
+
+                     <!--rowspan=Dire a la case combien de case prendre vers le bas-->
+
+                     <td rowspan="2">*****</td>
+                     <td>*****</td>
+                     <td>*****</td>
+                  </tr>
+                  <tr>
+
+                     <!--colspan=Dire a la case combien de case prendre vers la droite-->
+
+                     <td colspan="2">*****</td>
+
+                     <!-- <td>*****</td> on enleve cette case et meme toute ceux quond dois enlever car
+                    les colspan ou les rowspan prenne leur place donc on dois ajuster en consequence 
+                    du genre de tableau desirer-->
+
+               </tbody>
+
+               <!--Voici un exemple de ce quond peux faire avec un tableau en html-->
+
+            </table>
+            <table border="4" cellpadding="6" cellspaccing="4" style="text-align: center;">
+               <caption>Employee Information</caption>
+               <thead>
+                  <tr>
+                     <th rowspan="2">ID</th>
+                     <th colspan="2">Name</th>
+                     <th rowspan="2">Department</th>
+                     <th colspan="2">Contact</th>
+                  </tr>
+                  <tr>
+                     <th>First Name</th>
+                     <th>Last Name</th>
+                     <th>Email</th>
+                     <th>Phone</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>1</td>
+                     <td>John</td>
+                     <td>Doe</td>
+                     <td>IT</td>
+                     <td>john.doe@email.com</td>
+                     <td>(123) 456-7890</td>
+                  </tr>
+                  <tr>
+                     <td>2</td>
+                     <td>Jane</td>
+                     <td>Smith</td>
+                     <td>HR</td>
+                     <td>jane.smith@email.com</td>
+                     <td>(987) 654-3210</td>
+                  </tr>
+               </tbody>
+               <tfoot>
+                  <tr>
+                     <td colspan="6">Total Employees: 2</td>
+                  </tr>
+               </tfoot>
+            </table>
+         </div>
+         <div>
+
+            <!--Les liens-->
+
+            <h5>Les liens</h5>
+
+            <!--ouvrir une nouvelle page -->
+
+            <a href="https://htmlcheatsheet.com">html cheat sheet</a> <br><br>
+
+            <!--ouvrir un nouvel onglet -->
+
+            <a href="https://htmlcheatsheet.com" target="_blank">html cheat sheet</a>
+
+            <!--facons pour apeller des icons-->
+
+            <span>&#128722;</span>
+         </div>
+         <div>
+            <h6>Video</h6>
+
+            <!--controls pour ajouter un contol et mute la video-->
+
+            <video src="./video/cliff_-_22619 (Original).mp4" height=350px width="550px" controls muted></video>
+
+            <!--br=sauter une ligne-->
+            <br><br>
+
+            <!--auto play pour faire jouer automatiquement la video et muted pour mute loot cest pour que la video joue en boucle-->
+
+            <video src="./video/cliff_-_22619 (Original).mp4" height=350px width="550px" autoplay loot muted></video>
+         </div>
+      </section>
+      <section id="formulaire">
+         <h2>Formulaire</h2>
+
+         <!--formulaires type d'input
+            <input type="text">
+            <input type="number">
+            <input type="date">
+            <select id="****"> (pour une liste de choix(genre-couleur-ect))
+            <textarea></textarea> (Pour creer une zone de texte)
+            <input type="checkbox" id=""> (bouton envoyer le formulaire) 
+            (Y'a d'autre input comme par exmble password pour les mot de passe ect.)-->
+
+         <form action="">
+
+            <!--Label=identifiant de l'input--><!--for et id permettent de lier label a input-->
+
+            <label for="Name"><strong>Nom</strong< /label>
+
+                  <!--id=identifiant un peux comme une classe pour relier des chose-->
+                  <!--Placeholders=texte dans la boite de saisie-->
+
+                  <input type="text" id="Name" placeholder="Entrez voutre nom">
+                  <br><br>
+                  <label for="age"><strong>Entrez votre age</strong></label>
+
+                  <!--Value=valeur de base ici 18 pour site 18 et plus-->
+
+                  <input type="number" id="age" placeholder="Entrez votre age" value="18">
+                  <br><br>
+
+                  <!--Menu a selection pour plusieur choix preetablie(selected selected pour etablir un 
+                     choix de base)-->
+
+                  <label for="gender">Genre</label>
+                  <select id="gender">
+                     <option value="Homme">Homme</option>
+                     <option value="Femme">Femme</option>
+                     <option selected="selected" value="Bizzard">Bizzard</option>
+                  </select>
+                  <br><br>
+
+                  <!--Input de type radio attribut checked= selectionner de base
+                  il sont tous conecter parce qu'il on le meme name-->
+
+                  <input type="radio" name="type" id="mousse">
+                  <label for="mousse">souris</label>
+
+                  <input type="radio" name="type" id="dog">
+                  <label for="dog">chien</label>
+
+                  <input type="radio" name="type" id="cat" checked>
+                  <label for="cat">chat</label>
+                  <br><br>
+
+                  <!--Zone de texte cols et row cest pour les dimension (nombre de ligne et colone)-->
+
+                  <textarea placeholder="Votre message" cols="30" rows="10"></textarea>
+                  <br><br>
+
+                  <!--CheckBox-->
+
+                  <input type="checkbox" name="" id="condition">
+                  <label for="condition">Accepter les conditions generals</label>
+                  <br><br>
+
+                  <!--Bouton pour valider le formulaire-->
+
+                  <input type="submit" value="envoyer">
+                  <br><br>
+         </form>
+
+         <!--Bouton-->
+         <h2>Types de Boutons HTML</h2>
+
+         <!-- Bouton Standard -->
+         <button type="button">Bouton Standard</button>
+         <br><br>
+
+         <!-- Bouton Soumettre -->
+         <input type="submit" value="Bouton Soumettre" />
+         <br><br>
+
+         <!-- Bouton Réinitialiser -->
+         <input type="reset" value="Réinitialiser" />
+         <br><br>
+
+         <!-- Bouton avec lien onglet-->
+         <a target="_blank" href="https://chat.openai.com/" class="button">Bouton avec Lien Onglet</a>
+         <br><br>
+
+         <!-- Bouton avec lien -->
+         <a href="https://chat.openai.com/" class="button">Bouton avec Lien</a>
+         <br><br>
+
+         <!-- Bouton avec action JavaScript -->
+         <button type="button" onclick="alert('Bouton JavaScript cliqué')">Bouton JavaScript</button>
+         <br><br>
+
+         <!-- Bouton mailto -->
+         <a href="mailto:info@example.com" class="button">Envoyez un e-mail</a>
+         <br><br>
+
+      </section>
+   </main>
+
+   <footer>
+      <!-- Bouton mailto -->
+      <a href="mailto:info@example.com" class="button">Envoyez un e-mail</a>
+      <br><br>
+      <a href="./notice.txt" download="notice">Telecharger le fichier</a>
+   </footer>
+</body>
+
+</html>
